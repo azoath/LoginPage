@@ -1,0 +1,122 @@
+@media screen and (max-width: 300px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+
+
+body{
+    background: rgb(241, 192, 213);
+    background: linear-gradient(90deg, rgb(224, 171, 194) -2%, rgb(154, 188, 228) 100%); 
+    overflow-x: 0;
+}
+#container_body{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    
+}
+.container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+    border-style:outset;
+    box-shadow: 1px 3px 3px 3px #8a797962;
+    border-color: #d3c1c162;
+    border-radius: 15px;
+   
+    
+    
+       
+}
+.leftbox{
+    padding-right: 4rem;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightbox img{
+    width: 300px;
+    height: 24rem;
+    opacity: 0.7;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+
+.favicon{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction:row;
+    padding: 3px;
+    padding-bottom: 10px;
+}
+p{
+    color:#1a1919b3 ;
+}
+h3{
+    color:#1a1919b3 ;
+    text-align: center;
+   
+}
+h1{
+    color:#1a1919b3 ;
+    text-align: center;
+}
+
+
+
+button{
+    height: 2rem;
+    width: 8rem;
+    background: #5a525262;color: azure;
+    border: 1px 1px #5a525262 ;
+    border-radius: 5px;
+    border-style:outset;
+    border-color:#7e727262;
+    align-content: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 15px;
+    
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span{
+    padding-right: 25px;
+}
+button:hover span:after{
+    opacity: 1;
+    right:0;
+}
+
+input{
+    height:2rem;
+    width: 10rem;
+    border-style: hidden;
+    border-radius:5px;
+    background-color: azure;
+}
